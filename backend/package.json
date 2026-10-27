@@ -1,0 +1,36 @@
+{
+  "name": "forge-gym-backend",
+  "version": "1.0.0",
+  "description": "Backend API para FORGE Gym Performance con Node.js, Express y MongoDB Atlas",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "seed": "node scripts/seed.js",
+    "verify": "node scripts/verify-connection.js",
+    "test": "node tests/api.test.js"
+  },
+  "keywords": [
+    "gym",
+    "fitness",
+    "workout",
+    "mongoose",
+    "express",
+    "mongodb-atlas"
+  ],
+  "author": "FORGE Gym Performance Team",
+  "license": "MIT",
+  "dependencies": {
+    "@prisma/client": "^6.19.3",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "prisma": "^6.19.3"
+  }
+}

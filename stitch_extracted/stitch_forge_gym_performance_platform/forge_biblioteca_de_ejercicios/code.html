@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;1,600&amp;family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"primary-fixed":"#bef500","on-tertiary-fixed":"#410005","surface-bright":"#383a38","outline-variant":"#434933","on-primary-fixed":"#151f00","error":"#ffb4ab","surface-container-lowest":"#0d0f0e","on-background":"#e2e3e0","surface-container-highest":"#333534","primary":"#ffffff","on-secondary-fixed-variant":"#384e00","tertiary-fixed-dim":"#ffb3af","on-tertiary-fixed-variant":"#910519","primary-fixed-dim":"#a6d700","on-secondary-fixed":"#141f00","error-container":"#93000a","surface-tint":"#a6d700","on-error-container":"#ffdad6","inverse-surface":"#e2e3e0","on-surface":"#e2e3e0","surface":"#121413","tertiary-fixed":"#ffdad7","secondary-fixed-dim":"#a5d729","secondary-container":"#90c003","on-primary-container":"#536d00","surface-container":"#1e201f","on-surface-variant":"#c3caac","on-primary":"#273500","on-secondary":"#263500","on-error":"#690005","tertiary":"#ffffff","surface-container-high":"#282a29","primary-container":"#bef500","secondary-fixed":"#c0f446","on-primary-fixed-variant":"#3a4d00","on-tertiary":"#68000d","surface-dim":"#121413","inverse-on-surface":"#2f312f","background":"#121413","on-tertiary-container":"#bc2c32","surface-container-low":"#1a1c1b","secondary":"#aadd2f","inverse-primary":"#4e6700","on-secondary-container":"#354a00","outline":"#8d9479","surface-variant":"#333534","tertiary-container":"#ffdad7"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-xl":"2.5rem","space-md":"1rem","space-sm":"0.5rem","margin":"2rem","margin-mobile":"1rem","gutter-mobile":"0.75rem","space-xs":"0.25rem","gutter":"1rem","space-lg":"1.5rem"},"fontFamily":{"headline-lg":["Barlow Condensed"],"display-lg":["Barlow Condensed"],"display-lg-mobile":["Barlow Condensed"],"headline-md":["Barlow Condensed"],"display-xl":["Barlow Condensed"],"body-md":["Inter"],"body-sm":["Inter"],"headline-sm":["Barlow Condensed"],"display-xl-mobile":["Barlow Condensed"],"label-md":["Inter"],"body-lg":["Inter"],"metric-val":["Barlow Condensed"],"label-sm":["Inter"]},"fontSize":{"headline-lg":["32px",{"lineHeight":"36px","letterSpacing":"0.03em","fontWeight":"600"}],"display-lg":["48px",{"lineHeight":"52px","letterSpacing":"0.02em","fontWeight":"700"}],"display-lg-mobile":["36px",{"lineHeight":"40px","letterSpacing":"0.02em","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"28px","letterSpacing":"0.03em","fontWeight":"600"}],"display-xl":["72px",{"lineHeight":"72px","letterSpacing":"0.02em","fontWeight":"700"}],"body-md":["15px",{"lineHeight":"22px","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"headline-sm":["20px",{"lineHeight":"24px","letterSpacing":"0.04em","fontWeight":"600"}],"display-xl-mobile":["48px",{"lineHeight":"48px","letterSpacing":"0.02em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.08em","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"metric-val":["40px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"700"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.12em","fontWeight":"700"}]}}}};</script></head><body class="bg-surface-container-lowest text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-fixed"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest border-r border-outline-variant/30 z-50 flex flex-col justify-between"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center border-b border-outline-variant/30"><div class="flex items-center gap-space-sm"><img alt="FORGE Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBytB5tFNJVbJ3ExjELs7XwL3tSew69bXi_uSEpty9HV1YTAffcHxKzFtupyeSlkW6HRwgRURKWgNGUYtS35OhE7nV6QnetykWCxnj7pNMu8_R-Fp3CZMfYyobYb8zK5I1lGtybHzKv6vXXO71_CnL1nkFnI_nThNxNZWY9Cgad1BkQ0Ddaj3swjn4xq8Zi3BOfhG1alW6SmSlH5e15gNdJQsybHEugiZ-H3Q_Se3f3UuDI_Ry1-uaM"/><span class="font-headline-lg text-headline-lg tracking-wider text-primary uppercase">FORGE</span><span class="px-1.5 py-0.5 rounded-DEFAULT bg-surface-container-high border border-outline-variant text-[9px] font-label-sm tracking-widest text-primary-fixed uppercase ml-1">OS-V2</span></div></div><div class="px-space-md py-space-sm"><div class="px-space-sm py-space-xs mb-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-widest text-outline">TELEMETRÍA &amp; GESTIÓN</span></div><nav class="flex flex-col gap-1" data-active-classes="bg-surface-container-high text-primary-fixed font-bold border-l-2 border-primary-fixed"><a class="flex items-center gap-space-sm px-space-sm py-2.5 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-body-md text-body-md uppercase font-semibold tracking-wide">Dashboard</span></a><a class="flex items-center gap-space-sm px-space-sm py-2.5 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="mis-rutinas" href="#"><span class="material-symbols-outlined text-[20px]">format_list_bulleted</span><span class="font-body-md text-body-md uppercase font-semibold tracking-wide">Mis Rutinas</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-2.5 rounded-DEFAULT transition-all bg-surface-container-high text-primary-fixed font-bold border-l-2 border-primary-fixed" data-path="ejercicios" href="#"><span class="material-symbols-outlined text-[20px]">fitness_center</span><span class="font-body-md text-body-md uppercase font-semibold tracking-wide">Ejercicios</span></a><a class="flex items-center justify-between px-space-sm py-2.5 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all group" data-path="entrenamiento-activo" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px] text-primary-fixed group-hover:text-primary-fixed">timer</span><span class="font-body-md text-body-md uppercase font-semibold tracking-wide">Entrenamiento Activo</span></div><span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-DEFAULT bg-primary-fixed/15 border border-primary-fixed/40 text-primary-fixed font-label-sm text-[10px] tracking-widest uppercase"><span class="w-1.5 h-1.5 rounded-full bg-primary-fixed animate-ping"></span>LIVE</span></a><a class="flex items-center gap-space-sm px-space-sm py-2.5 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="historial" href="#"><span class="material-symbols-outlined text-[20px]">history</span><span class="font-body-md text-body-md uppercase font-semibold tracking-wide">Historial</span></a><a class="flex items-center gap-space-sm px-space-sm py-2.5 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="progreso-estadisticas" href="#"><span class="material-symbols-outlined text-[20px]">monitoring</span><span class="font-body-md text-body-md uppercase font-semibold tracking-wide">Progreso &amp; Estadísticas</span></a><a class="flex items-center gap-space-sm px-space-sm py-2.5 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="configuracion" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-body-md text-body-md uppercase font-semibold tracking-wide">Configuración</span></a></nav></div></div><div class="p-space-md border-t border-outline-variant/30 bg-surface-container-low"><div class="flex items-center justify-between"><div class="flex items-center gap-space-sm min-w-0"><div class="relative flex-shrink-0"><img alt="Profile" class="w-10 h-10 rounded-DEFAULT object-cover border border-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbxt0hcHEmLCvjh69Y9auWWSRjMZHclOBAtLvAfT05t8iwDc2A-9ASukJACz2QrsB91ndsH9d-F_OuBAfqGBhINec1_O3ECXEtdO4vaajcryOqhQ_oc_6pL-9SSfQIQvAoEH-h50-HXkoVSu7B_4AkeSpBcby4FmQ73lbd_wZuTkf91hE4vRCJagmrUqTNR9Cj29k7_Eir2qJNQiLzNMvV8QNDPMNUQgM7I-b1dkMzzFR70iUUNNqT"/><span class="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 bg-primary-fixed rounded-full ring-2 ring-surface-container-lowest"></span></div><div class="flex flex-col truncate"><span class="font-headline-sm text-headline-sm text-primary tracking-wide uppercase truncate leading-tight">Marcos Vega</span><span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-wider">Nivel Pro</span></div></div><a class="p-2 text-on-surface-variant hover:text-primary transition-colors flex-shrink-0" data-path="configuracion" href="#"><span class="material-symbols-outlined text-[20px]">settings</span></a></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl border-b border-outline-variant/30 z-40 px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-DEFAULT bg-surface-container-low border border-outline-variant/50"><span class="material-symbols-outlined text-outline text-[18px]">search</span><input class="bg-transparent text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:outline-none w-64 uppercase tracking-wider" placeholder="Buscar rutina, ejercicio o métrica..." type="text"/></div><div class="hidden xl:flex items-center gap-2 px-space-sm py-1 rounded-DEFAULT bg-surface-container-low border border-outline-variant/30"><span class="w-2 h-2 rounded-full bg-primary-fixed"></span><span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">ESTADO DEL GYM:</span><span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">METRICS ONLINE 100%</span></div></div><div class="flex items-center gap-space-md"><button class="flex items-center gap-1.5 px-space-md py-2 rounded-DEFAULT bg-primary-fixed text-on-primary-fixed hover:bg-primary-fixed-dim font-headline-sm text-headline-sm uppercase tracking-wider transition-all transform active:scale-95"><span class="material-symbols-outlined text-[20px]">bolt</span><span>Iniciar Sesión Rápida</span></button><button class="relative p-2 rounded-DEFAULT bg-surface-container-low border border-outline-variant/40 text-on-surface-variant hover:text-primary hover:bg-surface-container transition-all"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-2 pl-space-xs border-l border-outline-variant/30"><img alt="FORGE Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBytB5tFNJVbJ3ExjELs7XwL3tSew69bXi_uSEpty9HV1YTAffcHxKzFtupyeSlkW6HRwgRURKWgNGUYtS35OhE7nV6QnetykWCxnj7pNMu8_R-Fp3CZMfYyobYb8zK5I1lGtybHzKv6vXXO71_CnL1nkFnI_nThNxNZWY9Cgad1BkQ0Ddaj3swjn4xq8Zi3BOfhG1alW6SmSlH5e15gNdJQsybHEugiZ-H3Q_Se3f3UuDI_Ry1-uaM"/><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbxt0hcHEmLCvjh69Y9auWWSRjMZHclOBAtLvAfT05t8iwDc2A-9ASukJACz2QrsB91ndsH9d-F_OuBAfqGBhINec1_O3ECXEtdO4vaajcryOqhQ_oc_6pL-9SSfQIQvAoEH-h50-HXkoVSu7B_4AkeSpBcby4FmQ73lbd_wZuTkf91hE4vRCJagmrUqTNR9Cj29k7_Eir2qJNQiLzNMvV8QNDPMNUQgM7I-b1dkMzzFR70iUUNNqT"/></div></div></header><main class="w-full pt-16 bg-surface-container-lowest min-h-screen"><div class="flex flex-col w-full">
+<!-- Subtle decorative ambient glow element constrained within view -->
+<div class="relative w-full overflow-hidden px-space-md lg:px-space-xl py-space-lg">
+<div class="absolute -top-32 right-1/4 w-96 h-96 bg-primary-fixed/5 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute top-1/2 left-10 w-72 h-72 bg-secondary/5 rounded-full blur-3xl pointer-events-none"></div>
+<!-- MAIN COCKPIT HEADER -->
+<div class="relative flex flex-col md:flex-row md:items-end justify-between gap-space-md pb-space-lg">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs text-primary-fixed mb-1">
+<span class="material-symbols-outlined text-[16px]">terminal</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed">SISTEMA ATLAS MOTOR V2.4 // TELEMETRÍA</span>
+</div>
+<div class="flex items-baseline gap-space-sm flex-wrap">
+<h1 class="font-display-lg text-display-lg text-primary uppercase tracking-wide">BIBLIOTECA DE EJERCICIOS</h1>
+<span class="px-space-xs py-0.5 rounded-DEFAULT bg-surface-container-high text-on-surface-variant font-label-md text-label-md uppercase">142 PROTOCOLOS ACTIVOS</span>
+</div>
+</div>
+<!-- Search Omnibox & Display Toggle -->
+<div class="flex items-center gap-space-sm flex-wrap">
+<div class="relative flex items-center bg-surface-container-low px-space-sm py-2 rounded-DEFAULT shadow-md min-w-[300px]">
+<span class="material-symbols-outlined text-outline text-[20px] mr-2">search</span>
+<input class="w-full bg-transparent text-primary placeholder:text-outline font-body-sm text-body-sm focus:outline-none uppercase tracking-wide" id="exercise-search" placeholder="BUSCAR POR NOMBRE, MÚSCULO O TÉCNICA..." type="text"/>
+<kbd class="hidden sm:inline-block px-1.5 py-0.5 rounded-DEFAULT bg-surface-container text-on-surface-variant font-label-sm text-label-sm">⌘K</kbd>
+</div>
+<div class="flex items-center bg-surface-container-low p-1 rounded-DEFAULT shadow-sm">
+<button class="px-2.5 py-1.5 rounded-DEFAULT bg-primary-fixed text-on-primary-fixed transition-all flex items-center justify-center" id="view-grid-btn" title="Vista en Rejilla">
+<span class="material-symbols-outlined text-[18px]">grid_view</span>
+</button>
+<button class="px-2.5 py-1.5 rounded-DEFAULT text-on-surface-variant hover:text-primary transition-all flex items-center justify-center" id="view-list-btn" title="Vista Compacta">
+<span class="material-symbols-outlined text-[18px]">view_agenda</span>
+</button>
+</div>
+</div>
+</div>
+<!-- MUSCULAR CATEGORY FILTER BAR -->
+<div class="relative py-space-sm overflow-x-auto no-scrollbar -mx-space-md px-space-md lg:-mx-space-xl lg:px-space-xl flex items-center gap-space-xs">
+<button class="filter-pill group flex items-center gap-1.5 px-3 py-1.5 rounded-DEFAULT bg-primary-fixed text-on-primary-fixed font-headline-sm text-headline-sm uppercase tracking-wider transition-all transform active:scale-95 shadow-sm whitespace-nowrap">
+<span>TODOS</span>
+<span class="px-1 rounded-DEFAULT bg-on-primary-fixed text-primary-fixed text-label-sm font-label-sm">142</span>
+</button>
+<button class="filter-pill group flex items-center gap-1.5 px-3 py-1.5 rounded-DEFAULT bg-surface-container-low text-on-surface-variant hover:text-primary hover:bg-surface-container font-headline-sm text-headline-sm uppercase tracking-wider transition-all whitespace-nowrap">
+<span>PECHO</span>
+<span class="px-1 rounded-DEFAULT bg-surface-container-high text-on-surface-variant group-hover:text-primary text-label-sm font-label-sm">24</span>
+</button>
+<button class="filter-pill group flex items-center gap-1.5 px-3 py-1.5 rounded-DEFAULT bg-surface-container-low text-on-surface-variant hover:text-primary hover:bg-surface-container font-headline-sm text-headline-sm uppercase tracking-wider transition-all whitespace-nowrap">
+<span>ESPALDA</span>
+<span class="px-1 rounded-DEFAULT bg-surface-container-high text-on-surface-variant group-hover:text-primary text-label-sm font-label-sm">28</span>
+</button>
+<button class="filter-pill group flex items-center gap-1.5 px-3 py-1.5 rounded-DEFAULT bg-surface-container-low text-on-surface-variant hover:text-primary hover:bg-surface-container font-headline-sm text-headline-sm uppercase tracking-wider transition-all whitespace-nowrap">
+<span>PIERNAS</span>
+<span class="px-1 rounded-DEFAULT bg-surface-container-high text-on-surface-variant group-hover:text-primary text-label-sm font-label-sm">32</span>
+</button>
+<button class="filter-pill group flex items-center gap-1.5 px-3 py-1.5 rounded-DEFAULT bg-surface-container-low text-on-surface-variant hover:text-primary hover:bg-surface-container font-headline-sm text-headline-sm uppercase tracking-wider transition-all whitespace-nowrap">
+<span>HOMBROS</span>
+<span class="px-1 rounded-DEFAULT bg-surface-container-high text-on-surface-variant group-hover:text-primary text-label-sm font-label-sm">18</span>
+</button>
+<button class="filter-pill group flex items-center gap-1.5 px-3 py-1.5 rounded-DEFAULT bg-surface-container-low text-on-surface-variant hover:text-primary hover:bg-surface-container font-headline-sm text-headline-sm uppercase tracking-wider transition-all whitespace-nowrap">
+<span>BÍCEPS</span>
+<span class="px-1 rounded-DEFAULT bg-surface-container-high text-on-surface-variant group-hover:text-primary text-label-sm font-label-sm">14</span>
+</button>
+<button class="filter-pill group flex items-center gap-1.5 px-3 py-1.5 rounded-DEFAULT bg-surface-container-low text-on-surface-variant hover:text-primary hover:bg-surface-container font-headline-sm text-headline-sm uppercase tracking-wider transition-all whitespace-nowrap">
+<span>TRÍCEPS</span>
+<span class="px-1 rounded-DEFAULT bg-surface-container-high text-on-surface-variant group-hover:text-primary text-label-sm font-label-sm">16</span>
+</button>
+<button class="filter-pill group flex items-center gap-1.5 px-3 py-1.5 rounded-DEFAULT bg-surface-container-low text-on-surface-variant hover:text-primary hover:bg-surface-container font-headline-sm text-headline-sm uppercase tracking-wider transition-all whitespace-nowrap">
+<span>GLÚTEOS</span>
+<span class="px-1 rounded-DEFAULT bg-surface-container-high text-on-surface-variant group-hover:text-primary text-label-sm font-label-sm">12</span>
+</button>
+<button class="filter-pill group flex items-center gap-1.5 px-3 py-1.5 rounded-DEFAULT bg-surface-container-low text-on-surface-variant hover:text-primary hover:bg-surface-container font-headline-sm text-headline-sm uppercase tracking-wider transition-all whitespace-nowrap">
+<span>CORE / ABDOMEN</span>
+<span class="px-1 rounded-DEFAULT bg-surface-container-high text-on-surface-variant group-hover:text-primary text-label-sm font-label-sm">18</span>
+</button>
+</div>
+<!-- SECONDARY ADVANCED FILTER TOOLBAR -->
+<div class="mt-space-md p-space-sm bg-surface-container-low rounded-DEFAULT flex flex-wrap items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-space-md flex-wrap">
+<!-- Equipamiento Selector -->
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline">EQUIPO:</span>
+<div class="flex items-center gap-1 flex-wrap">
+<button class="px-2 py-1 rounded-DEFAULT bg-surface-container text-primary-fixed font-label-md text-label-md uppercase hover:bg-surface-container-high transition-colors">Barra Olímpica</button>
+<button class="px-2 py-1 rounded-DEFAULT bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md uppercase hover:text-primary transition-colors">Mancuernas</button>
+<button class="px-2 py-1 rounded-DEFAULT bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md uppercase hover:text-primary transition-colors">Máquina / Polea</button>
+<button class="px-2 py-1 rounded-DEFAULT bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md uppercase hover:text-primary transition-colors">Peso Corporal</button>
+<button class="px-2 py-1 rounded-DEFAULT bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md uppercase hover:text-primary transition-colors">Kettlebell</button>
+</div>
+</div>
+<div class="hidden xl:block w-px h-5 bg-surface-container-highest"></div>
+<!-- Dificultad -->
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline">DIFICULTAD:</span>
+<div class="flex items-center gap-1">
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container-lowest text-primary-fixed-dim text-label-sm font-label-sm uppercase">BÁSICO</span>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container text-primary-fixed text-label-sm font-label-sm uppercase font-bold">INTERMEDIO</span>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container-lowest text-on-surface-variant text-label-sm font-label-sm uppercase">AVANZADO</span>
+</div>
+</div>
+<div class="hidden xl:block w-px h-5 bg-surface-container-highest"></div>
+<!-- Tipo Movimiento -->
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline">CINEMÁTICA:</span>
+<button class="px-2 py-0.5 rounded-DEFAULT bg-surface-container text-primary text-label-sm font-label-sm uppercase">COMPUESTO</button>
+<button class="px-2 py-0.5 rounded-DEFAULT bg-surface-container-lowest text-on-surface-variant text-label-sm font-label-sm uppercase">AISLAMIENTO</button>
+</div>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase">ORDEN:</span>
+<select class="bg-surface-container-lowest text-primary font-label-md text-label-md uppercase px-2 py-1 rounded-DEFAULT focus:outline-none cursor-pointer">
+<option>MÁS POPULAR // FRECUENCIA</option>
+<option>RÉCORD PERSONAL (MÁS ALTO)</option>
+<option>ORDEN ALFABÉTICO (A-Z)</option>
+<option>INTENSIDAD RPE PROMEDIO</option>
+</select>
+</div>
+</div>
+<!-- MAIN CATALOG & TELEMETRY DETAIL SPLIT -->
+<div class="mt-space-lg grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT REGION: EXERCISE GRID (8 COLS ON DESKTOP) -->
+<div class="xl:col-span-7 2xl:col-span-8 flex flex-col gap-space-md" id="exercise-catalog">
+<div class="flex items-center justify-between pb-1">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline">MOSTRANDO RESULTADOS RELEVANTES (6 DE 142)</span>
+<span class="font-label-sm text-label-sm uppercase text-primary-fixed font-mono">SELECCIÓN ACTIVA: EX-001</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- CARD 1: Press de Banca (ACTIVE/SELECTED) -->
+<div class="exercise-card relative bg-surface-container p-space-md rounded-DEFAULT shadow-xl transition-all cursor-pointer group hover:-translate-y-0.5" data-exercise-id="ex-1">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-primary-fixed"></div>
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-wider font-mono">ID: EX-001 // PECHO</span>
+<h3 class="font-headline-md text-headline-md text-primary uppercase group-hover:text-primary-fixed transition-colors">PRESS DE BANCA PLANO</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Con Barra Olímpica estándar</span>
+</div>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-primary-fixed/20 text-primary-fixed font-label-sm text-label-sm uppercase">INTERMEDIO</span>
+</div>
+<!-- Technical Image Schematic Asset -->
+<div class="relative w-full h-36 bg-surface-container-lowest rounded-DEFAULT overflow-hidden my-space-sm">
+<img class="w-full h-full object-cover opacity-85 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300" data-alt="High contrast black and neon yellow sports technical illustration of an athlete performing a flat barbell bench press in a gritty powerlifting gym, isometric wireframe muscular highlights on pectoralis major and triceps, cinematic dark moody lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBY2e8_llZISstRDhOapA_lEy4HQp5uteIlYV1nRgSxqfmrIYBCZCDnFBptmjhO0AKsO6gXu_SQcPcIyaSrrAFc9K0IP-g5S2SxhTvAJfg6Qpx1xgTUo0EV1YbyrTpp8hatyiM1ftKs51KRxcKAANnM4PTSWdXJHyADH0kwi7G9GFS5rPRvIlc34hqU1043NK2Ov-lHhCOvlQnKMWXjeU525sku7VtM0gk6xBRDBf_UtwsNhAe8-rhU"/>
+<div class="absolute bottom-2 left-2 px-1.5 py-0.5 bg-surface-container-lowest/90 rounded-DEFAULT font-label-sm text-label-sm text-primary-fixed font-mono uppercase">PR: 125.0 KG</div>
+<div class="absolute top-2 right-2 px-1.5 py-0.5 bg-surface-container-lowest/90 rounded-DEFAULT font-label-sm text-label-sm text-on-surface-variant uppercase">COMPUESTO</div>
+</div>
+<div class="space-y-1.5 pt-1">
+<div class="flex items-baseline justify-between text-body-sm font-body-sm">
+<span class="text-outline uppercase text-[11px] font-label-sm">PRIMARIO:</span>
+<span class="text-primary font-semibold">Pectoral Mayor (Medio/Inferior)</span>
+</div>
+<div class="flex items-baseline justify-between text-body-sm font-body-sm">
+<span class="text-outline uppercase text-[11px] font-label-sm">SECUNDARIOS:</span>
+<span class="text-on-surface-variant truncate max-w-[170px]">Deltoides ant., Tríceps braquial</span>
+</div>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-primary-fixed">fitness_center</span>
+<span>BARRA OLÍMPICA</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary-fixed group-hover:translate-x-1 transition-transform">VER FICHA →</span>
+</div>
+</div>
+<!-- CARD 2: Sentadilla Libre Trasera -->
+<div class="exercise-card relative bg-surface-container-low p-space-md rounded-DEFAULT shadow-md hover:bg-surface-container transition-all cursor-pointer group hover:-translate-y-0.5" data-exercise-id="ex-2">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-transparent group-hover:bg-primary-fixed transition-colors"></div>
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider font-mono">ID: EX-002 // PIERNAS</span>
+<h3 class="font-headline-md text-headline-md text-primary uppercase group-hover:text-primary-fixed transition-colors">SENTADILLA LIBRE (HIGH BAR)</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Barra Trasera en Trapecio</span>
+</div>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase">AVANZADO</span>
+</div>
+<!-- Technical Image Schematic Asset -->
+<div class="relative w-full h-36 bg-surface-container-lowest rounded-DEFAULT overflow-hidden my-space-sm">
+<img class="w-full h-full object-cover opacity-85 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300" data-alt="High contrast muscular anatomy blueprint of a strength athlete executing a deep back squat inside an industrial power rack, lime green force vector biomechanics overlaid on quadriceps and glutes, dark atmospheric lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlWxOA6z8nYTAxHV-0bMA0vjyAg04IW-wqsbeKMAI35CcrssN8sFlRAWd_yQXzR58N3oQy_SWe6r_90-OJQ2lXlomECg12nzdiT7WiI51baUyJko8nrhLFGBdd4CAibU8ydA19at2RBGnKvpsMVNOQMjwscCKyuw-gpy6_A4DaQW4XIrF3hwpgfqvusmGIv6OdHpk3ia818AUxFQYmr9pf7NqRefXSAxjHy4B9Zmd2XzacewPo5cO-"/>
+<div class="absolute bottom-2 left-2 px-1.5 py-0.5 bg-surface-container-lowest/90 rounded-DEFAULT font-label-sm text-label-sm text-primary-fixed font-mono uppercase">PR: 160.0 KG</div>
+<div class="absolute top-2 right-2 px-1.5 py-0.5 bg-surface-container-lowest/90 rounded-DEFAULT font-label-sm text-label-sm text-on-surface-variant uppercase">COMPUESTO</div>
+</div>
+<div class="space-y-1.5 pt-1">
+<div class="flex items-baseline justify-between text-body-sm font-body-sm">
+<span class="text-outline uppercase text-[11px] font-label-sm">PRIMARIO:</span>
+<span class="text-primary font-semibold">Cuádriceps Femoral, Glúteo Mayor</span>
+</div>
+<div class="flex items-baseline justify-between text-body-sm font-body-sm">
+<span class="text-outline uppercase text-[11px] font-label-sm">SECUNDARIOS:</span>
+<span class="text-on-surface-variant truncate max-w-[170px]">Erectores espinales, Core</span>
+</div>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">fitness_center</span>
+<span>BARRA + DISCOS</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface-variant group-hover:text-primary-fixed transition-colors">VER FICHA →</span>
+</div>
+</div>
+<!-- CARD 3: Dominadas con Lastre -->
+<div class="exercise-card relative bg-surface-container-low p-space-md rounded-DEFAULT shadow-md hover:bg-surface-container transition-all cursor-pointer group hover:-translate-y-0.5" data-exercise-id="ex-3">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-transparent group-hover:bg-primary-fixed transition-colors"></div>
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider font-mono">ID: EX-003 // ESPALDA</span>
+<h3 class="font-headline-md text-headline-md text-primary uppercase group-hover:text-primary-fixed transition-colors">DOMINADAS CON LASTRE</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Agarre Prono Estricto</span>
+</div>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase">AVANZADO</span>
+</div>
+<div class="relative w-full h-36 bg-surface-container-lowest rounded-DEFAULT overflow-hidden my-space-sm">
+<img class="w-full h-full object-cover opacity-85 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300" data-alt="Athletic gymnast performing a weighted pull up with heavy weight chain attached to lifting belt, back muscle anatomy highlighted in electric yellow green, gritty training bunker gym with chalk dust in air." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaggG1KmdoTyjOvD5CjtCWiuiJ-9XlnqZknAMY9PV5jLOCarbDo_1NGuPMXtc7Leoscut9IiGpAaf2qfZAkjFooSr3rUJ2vpOD4fHovC8OiPXNEQh2TA-_ZVLnoQV8BzVK8yBcV93i-8JBpK-eCLHtE8F80ENZlzlSG4nR1gU8gMA32Xw2tfdqoFjwFoTfePxfMDidOdTCAAxGoOL5xrJ2lP-2nnpRQP5cz-q-6NZkK6gQ6eQC8EEU"/>
+<div class="absolute bottom-2 left-2 px-1.5 py-0.5 bg-surface-container-lowest/90 rounded-DEFAULT font-label-sm text-label-sm text-primary-fixed font-mono uppercase">PR: +37.5 KG</div>
+<div class="absolute top-2 right-2 px-1.5 py-0.5 bg-surface-container-lowest/90 rounded-DEFAULT font-label-sm text-label-sm text-on-surface-variant uppercase">CALISTÉNICO</div>
+</div>
+<div class="space-y-1.5 pt-1">
+<div class="flex items-baseline justify-between text-body-sm font-body-sm">
+<span class="text-outline uppercase text-[11px] font-label-sm">PRIMARIO:</span>
+<span class="text-primary font-semibold">Dorsal Ancho, Redondo Mayor</span>
+</div>
+<div class="flex items-baseline justify-between text-body-sm font-body-sm">
+<span class="text-outline uppercase text-[11px] font-label-sm">SECUNDARIOS:</span>
+<span class="text-on-surface-variant truncate max-w-[170px]">Bíceps, Braquiorradial, Trapecio</span>
+</div>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">accessibility_new</span>
+<span>PESO CORP. + LASTRE</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface-variant group-hover:text-primary-fixed transition-colors">VER FICHA →</span>
+</div>
+</div>
+<!-- CARD 4: Press Militar con Barra -->
+<div class="exercise-card relative bg-surface-container-low p-space-md rounded-DEFAULT shadow-md hover:bg-surface-container transition-all cursor-pointer group hover:-translate-y-0.5" data-exercise-id="ex-4">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-transparent group-hover:bg-primary-fixed transition-colors"></div>
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider font-mono">ID: EX-004 // HOMBROS</span>
+<h3 class="font-headline-md text-headline-md text-primary uppercase group-hover:text-primary-fixed transition-colors">PRESS MILITAR DE PIE</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Overhead Press Estricto (OHP)</span>
+</div>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase">INTERMEDIO</span>
+</div>
+<div class="relative w-full h-36 bg-surface-container-lowest rounded-DEFAULT overflow-hidden my-space-sm">
+<img class="w-full h-full object-cover opacity-85 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300" data-alt="Athlete locked out in standing overhead barbell military press, sharp shadows and yellow green dynamic telemetry lines outlining deltoid shoulders and triceps, ultra clean functional gym." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPo1D-n5zrlgth0JNlgm1_qTZGkeqPALAntCDiEXvyfGwQL5ZesxAYOH466hTZYqslOBvVbKQx-J977nOVQUgqNDCSWnXrNImW21soYhHkRUcx8kv7r4YZqbHb5DBwR_dhxvH36fcr_7ZHq5j3OsDIhYssdqNmodCAFxrSoCZd0NoaAveIrGF0QR7Wx9dBMgxh-gXzQYRy5Npt5EloVx_kjzi6mlS6GGI6A_VXKTtE7KDB4At9p6JB"/>
+<div class="absolute bottom-2 left-2 px-1.5 py-0.5 bg-surface-container-lowest/90 rounded-DEFAULT font-label-sm text-label-sm text-primary-fixed font-mono uppercase">PR: 75.0 KG</div>
+<div class="absolute top-2 right-2 px-1.5 py-0.5 bg-surface-container-lowest/90 rounded-DEFAULT font-label-sm text-label-sm text-on-surface-variant uppercase">COMPUESTO</div>
+</div>
+<div class="space-y-1.5 pt-1">
+<div class="flex items-baseline justify-between text-body-sm font-body-sm">
+<span class="text-outline uppercase text-[11px] font-label-sm">PRIMARIO:</span>
+<span class="text-primary font-semibold">Deltoides Anterior / Medio</span>
+</div>
+<div class="flex items-baseline justify-between text-body-sm font-body-sm">
+<span class="text-outline uppercase text-[11px] font-label-sm">SECUNDARIOS:</span>
+<span class="text-on-surface-variant truncate max-w-[170px]">Tríceps, Pectoral sup., Core</span>
+</div>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">fitness_center</span>
+<span>BARRA OLÍMPICA</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface-variant group-hover:text-primary-fixed transition-colors">VER FICHA →</span>
+</div>
+</div>
+<!-- CARD 5: Peso Muerto Rumano -->
+<div class="exercise-card relative bg-surface-container-low p-space-md rounded-DEFAULT shadow-md hover:bg-surface-container transition-all cursor-pointer group hover:-translate-y-0.5" data-exercise-id="ex-5">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-transparent group-hover:bg-primary-fixed transition-colors"></div>
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider font-mono">ID: EX-005 // POSTERIOR</span>
+<h3 class="font-headline-md text-headline-md text-primary uppercase group-hover:text-primary-fixed transition-colors">PESO MUERTO RUMANO (RDL)</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Bisagra de Cadera Controlada</span>
+</div>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase">INTERMEDIO</span>
+</div>
+<div class="relative w-full h-36 bg-surface-container-lowest rounded-DEFAULT overflow-hidden my-space-sm">
+<img class="w-full h-full object-cover opacity-85 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300" data-alt="Technical side profile illustration of Romanian Deadlift execution showing hip hinge angle and hamstring activation vectors, athletic dark brutalist gym aesthetics with lime green kinetic lines." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkLA-em5tyNWdR1OK0oHlb6en8Lg8F81BTUQ3CSyI0Hc0fdACLT2ZGK8fIRp9PpvWvhpvjhKACZ4xrLvV73bm1k1X959RQ4Mm1y0TnmDyy3y6zRfXY38h8duVZ6MGC6i47urepfwor9oor8alx40QZP7Z5tpTwigu1QmxAhe7Fnehmv7PgZlu5YWAgbWCKVD3Uxic9BiJQlDwAptlpa8NrtZupU1SYTiXTLV58YyzycV_f4zb7Bqs0"/>
+<div class="absolute bottom-2 left-2 px-1.5 py-0.5 bg-surface-container-lowest/90 rounded-DEFAULT font-label-sm text-label-sm text-primary-fixed font-mono uppercase">PR: 150.0 KG</div>
+<div class="absolute top-2 right-2 px-1.5 py-0.5 bg-surface-container-lowest/90 rounded-DEFAULT font-label-sm text-label-sm text-on-surface-variant uppercase">COMPUESTO</div>
+</div>
+<div class="space-y-1.5 pt-1">
+<div class="flex items-baseline justify-between text-body-sm font-body-sm">
+<span class="text-outline uppercase text-[11px] font-label-sm">PRIMARIO:</span>
+<span class="text-primary font-semibold">Isquiosurales, Glúteo Mayor</span>
+</div>
+<div class="flex items-baseline justify-between text-body-sm font-body-sm">
+<span class="text-outline uppercase text-[11px] font-label-sm">SECUNDARIOS:</span>
+<span class="text-on-surface-variant truncate max-w-[170px]">Erectores, Trapecios, Antebrazo</span>
+</div>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">fitness_center</span>
+<span>BARRA O MANCUERNAS</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface-variant group-hover:text-primary-fixed transition-colors">VER FICHA →</span>
+</div>
+</div>
+<!-- CARD 6: Elevaciones Laterales Polea -->
+<div class="exercise-card relative bg-surface-container-low p-space-md rounded-DEFAULT shadow-md hover:bg-surface-container transition-all cursor-pointer group hover:-translate-y-0.5" data-exercise-id="ex-6">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-transparent group-hover:bg-primary-fixed transition-colors"></div>
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider font-mono">ID: EX-006 // HOMBROS</span>
+<h3 class="font-headline-md text-headline-md text-primary uppercase group-hover:text-primary-fixed transition-colors">ELEVACIÓN LATERAL POLEA</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tensión Continua Unilateral</span>
+</div>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase">BÁSICO</span>
+</div>
+<div class="relative w-full h-36 bg-surface-container-lowest rounded-DEFAULT overflow-hidden my-space-sm">
+<img class="w-full h-full object-cover opacity-85 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300" data-alt="Muscular male doing cable lateral raises on low pulley tower, deltoid lateral head hypertrophy fiber focus, moody dramatic gym background with high contrast monochrome and chartreuse lighting accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6UE3Tghv0PlbSkD8zh8saBxQduCO700H4W9KUgWQE6vyjCALteQoynKeCMCr4vij2tEKRq3g-CW0Lh_dczht5dA7jC-LCVphzqpC5I03kzjeFNVlBEw6TJXBWP9TB9KQD7avHNSyM-Db1abVNH1aY5yn-7DfN5Ts9MukRl1w9YH_JDLlssvR028855cBRuhy-IiiybAicBJ2CwFLkP8jJBynxQQLybZaVInG-vstxrdfRHPDvG95B"/>
+<div class="absolute bottom-2 left-2 px-1.5 py-0.5 bg-surface-container-lowest/90 rounded-DEFAULT font-label-sm text-label-sm text-primary-fixed font-mono uppercase">PR: 18.5 KG</div>
+<div class="absolute top-2 right-2 px-1.5 py-0.5 bg-surface-container-lowest/90 rounded-DEFAULT font-label-sm text-label-sm text-on-surface-variant uppercase">AISLAMIENTO</div>
+</div>
+<div class="space-y-1.5 pt-1">
+<div class="flex items-baseline justify-between text-body-sm font-body-sm">
+<span class="text-outline uppercase text-[11px] font-label-sm">PRIMARIO:</span>
+<span class="text-primary font-semibold">Deltoides Lateral (Acrómiat)</span>
+</div>
+<div class="flex items-baseline justify-between text-body-sm font-body-sm">
+<span class="text-outline uppercase text-[11px] font-label-sm">SECUNDARIOS:</span>
+<span class="text-on-surface-variant truncate max-w-[170px]">Supraespinoso, Trapecio sup.</span>
+</div>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+<span>MÁQUINA / POLEA</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface-variant group-hover:text-primary-fixed transition-colors">VER FICHA →</span>
+</div>
+</div>
+</div>
+<!-- Pagination / Load Segment -->
+<div class="mt-space-md p-space-sm bg-surface-container-low rounded-DEFAULT flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase">PÁGINA 1 DE 24 // ÍNDICE MOTOR COMPLETO</span>
+<div class="flex items-center gap-space-xs">
+<button class="px-3 py-1.5 rounded-DEFAULT bg-surface-container text-on-surface-variant opacity-50 cursor-not-allowed font-label-sm text-label-sm uppercase">ANTERIOR</button>
+<button class="px-3 py-1.5 rounded-DEFAULT bg-surface-container text-primary font-label-sm text-label-sm uppercase hover:bg-surface-container-high transition-colors">SIGUIENTE</button>
+</div>
+</div>
+</div>
+<!-- RIGHT REGION: DEEP TELEMETRY DETAIL PANEL (5 COLS ON DESKTOP) -->
+<div class="xl:col-span-5 2xl:col-span-4 sticky top-20 flex flex-col gap-space-md">
+<div class="bg-surface-container p-space-lg rounded-DEFAULT shadow-xl relative overflow-hidden">
+<!-- Top Telemetry Header -->
+<div class="flex items-start justify-between gap-space-sm mb-space-md">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="w-2 h-2 rounded-full bg-primary-fixed animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed">FICHA BIOMECÁNICA ACTIVA</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary uppercase" id="detail-title">PRESS DE BANCA PLANO</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant" id="detail-equipment">Barra Olímpica Estándar // Banco Horizontal</span>
+</div>
+<button class="p-2 rounded-DEFAULT bg-surface-container-high text-primary-fixed hover:bg-surface-bright transition-colors" title="Guardar como Favorito">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</button>
+</div>
+<!-- Visual Muscle Activation Schematic Block -->
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT mb-space-md">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline">MAPA DE ACTIVACIÓN ANATÓMICA</span>
+<span class="font-label-sm text-label-sm text-primary-fixed font-mono">EMG PEAK: 94%</span>
+</div>
+<div class="grid grid-cols-12 gap-space-sm items-center">
+<!-- Schematic SVG Body Indicator -->
+<div class="col-span-5 flex justify-center py-2">
+<svg class="w-28 h-auto" viewbox="0 0 100 160" xmlns="http://www.w3.org/2000/svg">
+<!-- Simplified Human Athletic Silhouette Wireframe -->
+<circle cx="50" cy="16" fill="#333534" r="10"></circle>
+<!-- Neck & Traps -->
+<path d="M42 26 L58 26 L64 34 L36 34 Z" fill="#383a38"></path>
+<!-- Pectorals (Active Primary Highlighted) -->
+<path d="M37 36 L49 36 L49 52 L34 46 Z" fill="#bef500"></path>
+<path d="M51 36 L63 36 L66 46 L51 52 Z" fill="#bef500"></path>
+<!-- Abdominals / Core -->
+<rect fill="#282a29" height="26" rx="2" width="16" x="42" y="54"></rect>
+<!-- Deltoids Anterior (Secondary Active) -->
+<circle cx="31" cy="40" fill="#aadd2f" r="6"></circle>
+<circle cx="69" cy="40" fill="#aadd2f" r="6"></circle>
+<!-- Arms / Triceps -->
+<path d="M26 46 L30 46 L27 75 L22 75 Z" fill="#aadd2f"></path>
+<path d="M70 46 L74 46 L78 75 L73 75 Z" fill="#aadd2f"></path>
+<!-- Forearms -->
+<path d="M22 78 L26 78 L24 105 L20 105 Z" fill="#333534"></path>
+<path d="M74 78 L78 78 L80 105 L76 105 Z" fill="#333534"></path>
+<!-- Pelvis / Legs -->
+<path d="M40 82 L60 82 L55 96 L45 96 Z" fill="#282a29"></path>
+<path d="M38 98 L48 98 L46 150 L38 150 Z" fill="#333534"></path>
+<path d="M52 98 L62 98 L62 150 L54 150 Z" fill="#333534"></path>
+</svg>
+</div>
+<!-- Activation Bars Telemetry -->
+<div class="col-span-7 flex flex-col justify-center gap-space-xs">
+<div>
+<div class="flex justify-between font-label-sm text-label-sm uppercase mb-1">
+<span class="text-primary font-bold">Pectoral Mayor</span>
+<span class="text-primary-fixed font-mono font-bold">94%</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-DEFAULT overflow-hidden">
+<div class="bg-primary-fixed h-full w-[94%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm uppercase mb-1">
+<span class="text-on-surface-variant">Tríceps Braquial</span>
+<span class="text-secondary font-mono">68%</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-DEFAULT overflow-hidden">
+<div class="bg-secondary h-full w-[68%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm uppercase mb-1">
+<span class="text-on-surface-variant">Deltoides Anterior</span>
+<span class="text-secondary font-mono">61%</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-DEFAULT overflow-hidden">
+<div class="bg-secondary h-full w-[61%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm uppercase mb-1">
+<span class="text-outline">Serrato Anterior</span>
+<span class="text-outline font-mono">22%</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-DEFAULT overflow-hidden">
+<div class="bg-surface-bright h-full w-[22%]"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Execution Protocol Steps (4 Phases) -->
+<div class="mb-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline block mb-space-xs">PROTOCOLO DE EJECUCIÓN (4 FASES)</span>
+<div class="space-y-space-xs">
+<div class="p-space-xs bg-surface-container-low rounded-DEFAULT flex items-start gap-space-sm">
+<span class="font-label-sm text-label-sm font-mono text-primary-fixed bg-surface-container-high px-1.5 py-0.5 rounded-DEFAULT">01</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary uppercase text-sm leading-tight">SETUP &amp; RETRACCIÓN</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[12px] leading-relaxed">Apoyo escapular firme, arco fisiológico neutro, pies enclavados al suelo generando leg-drive activo.</p>
+</div>
+</div>
+<div class="p-space-xs bg-surface-container-low rounded-DEFAULT flex items-start gap-space-sm">
+<span class="font-label-sm text-label-sm font-mono text-primary-fixed bg-surface-container-high px-1.5 py-0.5 rounded-DEFAULT">02</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary uppercase text-sm leading-tight">DESCENSO CONTROLADO</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[12px] leading-relaxed">Fase excéntrica de 2-3s. Codos a ~45-75° respecto al torso. Barra desciende al esternón medio.</p>
+</div>
+</div>
+<div class="p-space-xs bg-surface-container-low rounded-DEFAULT flex items-start gap-space-sm">
+<span class="font-label-sm text-label-sm font-mono text-primary-fixed bg-surface-container-high px-1.5 py-0.5 rounded-DEFAULT">03</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary uppercase text-sm leading-tight">PUNTO DE INFLEXIÓN</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[12px] leading-relaxed">Pausa isométrica de medio segundo sin rebotar la barra en la caja torácica. Máxima tensión activa.</p>
+</div>
+</div>
+<div class="p-space-xs bg-surface-container-low rounded-DEFAULT flex items-start gap-space-sm">
+<span class="font-label-sm text-label-sm font-mono text-primary-fixed bg-surface-container-high px-1.5 py-0.5 rounded-DEFAULT">04</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary uppercase text-sm leading-tight">EMPUJE EXPLOSIVO</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[12px] leading-relaxed">Aceleración vertical con trayectoria en ligera curva 'J' hacia la vertical de los ojos sin desacoplar escápulas.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Key Safety Tips -->
+<div class="p-space-sm bg-surface-container-lowest rounded-DEFAULT mb-space-md">
+<div class="flex items-center gap-1.5 mb-1.5">
+<span class="material-symbols-outlined text-primary-fixed text-[18px]">verified_user</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">SEGURIDAD CRÍTICA &amp; BIOMECÁNICA</span>
+</div>
+<ul class="text-[12px] font-body-sm text-on-surface-variant space-y-1 list-disc list-inside">
+<li>Nunca emplear agarre suicida (sin pulgar). El pulgar debe cerrar el agarre.</li>
+<li>Mantén los codos por debajo de la línea clavicular para evitar pinzamiento subacromial.</li>
+<li>Colocar siempre los cierres de barra o contar con pines de seguridad calibrados.</li>
+</ul>
+</div>
+<!-- Personal Historic Record SVG Mini Chart -->
+<div class="p-space-sm bg-surface-container-low rounded-DEFAULT mb-space-lg">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline">HISTORIAL PERSONAL // 1RM ESTIMADO</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md text-primary-fixed font-mono">125.0</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">KG PR</span>
+</div>
+</div>
+<!-- SVG Sparkline Line Chart -->
+<div class="w-full h-16 relative">
+<svg class="w-full h-full overflow-visible" preserveaspectratio="none" viewbox="0 0 300 60">
+<!-- Grid Lines -->
+<line stroke="#333534" stroke-dasharray="2 2" stroke-width="1" x1="0" x2="300" y1="15" y2="15"></line>
+<line stroke="#333534" stroke-dasharray="2 2" stroke-width="1" x1="0" x2="300" y1="40" y2="40"></line>
+<!-- Linear Gradient Def -->
+<defs>
+<lineargradient id="limeGradient" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#bef500" stop-opacity="0.3"></stop>
+<stop offset="100%" stop-color="#bef500" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<!-- Area fill -->
+<polygon fill="url(#limeGradient)" points="0,55 0,48 50,42 100,45 150,30 200,24 250,22 300,8 300,55"></polygon>
+<!-- Stroke path -->
+<polyline fill="none" points="0,48 50,42 100,45 150,30 200,24 250,22 300,8" stroke="#bef500" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></polyline>
+<!-- Current PR Dot -->
+<circle cx="300" cy="8" fill="#ffffff" r="4" stroke="#bef500" stroke-width="2"></circle>
+</svg>
+</div>
+<div class="flex justify-between items-center text-[10px] font-mono text-outline pt-1">
+<span>HACE 6 MESES (100 KG)</span>
+<span>SESIÓN PREVIA (122.5 KG)</span>
+<span class="text-primary-fixed">RÉCORD HOY (125 KG)</span>
+</div>
+</div>
+<!-- Bottom Action Buttons -->
+<div class="flex flex-col gap-space-xs">
+<button class="w-full py-3 rounded-DEFAULT bg-primary-fixed text-on-primary-fixed hover:bg-primary-fixed-dim font-headline-sm text-headline-sm uppercase tracking-wider transition-all transform active:scale-95 flex items-center justify-center gap-2 shadow-lg" id="add-to-routine-btn">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>+ AÑADIR A UNA RUTINA</span>
+</button>
+<div class="flex items-center gap-space-xs">
+<button class="flex-1 py-2 rounded-DEFAULT bg-surface-container-high text-on-surface-variant hover:text-primary font-headline-sm text-headline-sm uppercase tracking-wider text-sm transition-colors text-center">
+                VER HISTORIAL DE SERIES
+              </button>
+<button class="flex-1 py-2 rounded-DEFAULT bg-surface-container-high text-on-surface-variant hover:text-primary font-headline-sm text-headline-sm uppercase tracking-wider text-sm transition-colors text-center">
+                CALCULADORA DE RPE
+              </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive JavaScript for micro-interactions -->
+<script>
+    (function initExerciseLibrary() {
+      // Toggle active states for filter pills
+      const pills = document.querySelectorAll('.filter-pill');
+      pills.forEach(pill => {
+        pill.addEventListener('click', () => {
+          pills.forEach(p => {
+            p.classList.remove('bg-primary-fixed', 'text-on-primary-fixed');
+            p.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+          });
+          pill.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+          pill.classList.add('bg-primary-fixed', 'text-on-primary-fixed');
+        });
+      });
+
+      // Card selection to update side preview
+      const cards = document.querySelectorAll('.exercise-card');
+      const detailTitle = document.getElementById('detail-title');
+      const detailEquipment = document.getElementById('detail-equipment');
+
+      const exerciseData = {
+        'ex-1': {
+          title: 'PRESS DE BANCA PLANO',
+          equipment: 'Barra Olímpica Estándar // Banco Horizontal'
+        },
+        'ex-2': {
+          title: 'SENTADILLA TRASERA (HIGH BAR)',
+          equipment: 'Barra Olímpica + Rack // Jaula de Seguridad'
+        },
+        'ex-3': {
+          title: 'DOMINADAS CON LASTRE',
+          equipment: 'Barra de Dominadas fija + Cinturón de Inmersión'
+        },
+        'ex-4': {
+          title: 'PRESS MILITAR DE PIE (OHP)',
+          equipment: 'Barra Olímpica + Soportes verticales'
+        },
+        'ex-5': {
+          title: 'PESO MUERTO RUMANO (RDL)',
+          equipment: 'Barra Olímpica o Mancuernas pesadas'
+        },
+        'ex-6': {
+          title: 'ELEVACIÓN LATERAL EN POLEA',
+          equipment: 'Torre de poleas regulable en altura mínima'
+        }
+      };
+
+      cards.forEach(card => {
+        card.addEventListener('click', () => {
+          cards.forEach(c => {
+            c.classList.remove('bg-surface-container');
+            c.classList.add('bg-surface-container-low');
+            const indicator = c.querySelector('.w-1');
+            if(indicator) indicator.classList.remove('bg-primary-fixed');
+          });
+
+          card.classList.remove('bg-surface-container-low');
+          card.classList.add('bg-surface-container');
+          const activeIndicator = card.querySelector('.w-1');
+          if(activeIndicator) activeIndicator.classList.add('bg-primary-fixed');
+
+          const exId = card.getAttribute('data-exercise-id');
+          if(exerciseData[exId]) {
+            detailTitle.textContent = exerciseData[exId].title;
+            detailEquipment.textContent = exerciseData[exId].equipment;
+          }
+        });
+      });
+
+      // Add to routine feedback
+      const addBtn = document.getElementById('add-to-routine-btn');
+      if (addBtn) {
+        addBtn.addEventListener('click', () => {
+          const originalText = addBtn.innerHTML;
+          addBtn.innerHTML = '<span class="material-symbols-outlined text-[20px]">check</span><span>¡AÑADIDO CON ÉXITO!</span>';
+          addBtn.classList.add('bg-secondary');
+          setTimeout(() => {
+            addBtn.innerHTML = originalText;
+            addBtn.classList.remove('bg-secondary');
+          }, 1800);
+        });
+      }
+
+      // View toggle (Grid / Agenda)
+      const gridBtn = document.getElementById('view-grid-btn');
+      const listBtn = document.getElementById('view-list-btn');
+      const catalogContainer = document.querySelector('#exercise-catalog > .grid');
+
+      if (gridBtn && listBtn && catalogContainer) {
+        listBtn.addEventListener('click', () => {
+          listBtn.classList.add('bg-primary-fixed', 'text-on-primary-fixed');
+          listBtn.classList.remove('text-on-surface-variant');
+          gridBtn.classList.remove('bg-primary-fixed', 'text-on-primary-fixed');
+          gridBtn.classList.add('text-on-surface-variant');
+          catalogContainer.classList.remove('md:grid-cols-2');
+          catalogContainer.classList.add('grid-cols-1');
+        });
+
+        gridBtn.addEventListener('click', () => {
+          gridBtn.classList.add('bg-primary-fixed', 'text-on-primary-fixed');
+          gridBtn.classList.remove('text-on-surface-variant');
+          listBtn.classList.remove('bg-primary-fixed', 'text-on-primary-fixed');
+          listBtn.classList.add('text-on-surface-variant');
+          catalogContainer.classList.add('md:grid-cols-2');
+          catalogContainer.classList.remove('grid-cols-1');
+        });
+      }
+
+      // Keyboard Shortcut listener (CMD+K / CTRL+K)
+      window.addEventListener('keydown', (e) => {
+        if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+          e.preventDefault();
+          const searchInput = document.getElementById('exercise-search');
+          if (searchInput) {
+            searchInput.focus();
+          }
+        }
+      });
+    })();
+  </script>
+</div></main></div></body></html>

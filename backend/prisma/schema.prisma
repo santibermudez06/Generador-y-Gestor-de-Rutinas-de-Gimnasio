@@ -1,0 +1,124 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id                  String           @id @default(uuid())
+  name                String
+  email               String           @unique
+  passwordHash        String
+  preferredWeightUnit String           @default("kg")
+  role                String           @default("athlete")
+  createdAt           DateTime         @default(now())
+  updatedAt           DateTime         @updatedAt
+  routines            Routine[]
+  workoutSessions     WorkoutSession[]
+
+  @@map("users")
+}
+
+model MuscleGroup {
+  id          String     @id @default(uuid())
+  name        String     @unique
+  description String?
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+  exercises   Exercise[]
+
+  @@map("muscle_groups")
+}
+
+model Exercise {
+  id               String            @id @default(uuid())
+  name             String            @unique
+  description      String?
+  muscleGroupId    String
+  muscleGroup      MuscleGroup       @relation(fields: [muscleGroupId], references: [id], onDelete: Cascade)
+  secondaryMuscles String            @default("[]")
+  equipment        String            @default("Peso corporal")
+  difficulty       String            @default("intermediate")
+  instructions     String            @default("[]")
+  imageUrl         String?
+  createdAt        DateTime          @default(now())
+  updatedAt        DateTime          @updatedAt
+  routineExercises RoutineExercise[]
+  workoutSets      WorkoutSet[]
+
+  @@map("exercises")
+}
+
+model Routine {
+  id                String            @id @default(uuid())
+  userId            String
+  user              User              @relation(fields: [userId], references: [id], onDelete: Cascade)
+  name              String
+  description       String?
+  difficulty        String            @default("intermediate")
+  estimatedDuration Int               @default(60)
+  createdAt         DateTime          @default(now())
+  updatedAt         DateTime          @updatedAt
+  exercises         RoutineExercise[]
+  workoutSessions   WorkoutSession[]
+
+  @@index([userId, createdAt])
+  @@map("routines")
+}
+
+model RoutineExercise {
+  id           String   @id @default(uuid())
+  routineId    String
+  routine      Routine  @relation(fields: [routineId], references: [id], onDelete: Cascade)
+  exerciseId   String
+  exercise     Exercise @relation(fields: [exerciseId], references: [id], onDelete: Cascade)
+  order        Int      @default(0)
+  targetSets   Int      @default(3)
+  targetReps   Int      @default(10)
+  targetWeight Float    @default(0)
+  restSeconds  Int      @default(90)
+
+  @@index([routineId, order])
+  @@map("routine_exercises")
+}
+
+model WorkoutSession {
+  id              String       @id @default(uuid())
+  userId          String
+  user            User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  routineId       String?
+  routine         Routine?     @relation(fields: [routineId], references: [id], onDelete: SetNull)
+  name            String       @default("Entrenamiento Libre")
+  startedAt       DateTime     @default(now())
+  completedAt     DateTime?
+  durationSeconds Int          @default(0)
+  status          String       @default("in_progress")
+  createdAt       DateTime     @default(now())
+  updatedAt       DateTime     @updatedAt
+  sets            WorkoutSet[]
+
+  @@index([userId, startedAt])
+  @@index([userId, status])
+  @@map("workout_sessions")
+}
+
+model WorkoutSet {
+  id               String         @id @default(uuid())
+  workoutSessionId String
+  workoutSession   WorkoutSession @relation(fields: [workoutSessionId], references: [id], onDelete: Cascade)
+  exerciseId       String
+  exercise         Exercise       @relation(fields: [exerciseId], references: [id], onDelete: Cascade)
+  setNumber        Int
+  weight           Float          @default(0)
+  repetitions      Int            @default(0)
+  completed        Boolean        @default(false)
+  rpe              Float?
+  recordedAt       DateTime       @default(now())
+
+  @@index([workoutSessionId, setNumber])
+  @@map("workout_sets")
+}
+
